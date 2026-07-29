@@ -381,6 +381,15 @@ code {
   letter-spacing: 0.02em;
 }
 
+.qa-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  margin-bottom: 12px;
+}
+
 .note-list {
   margin: 0 0 16px;
   padding-left: 20px;
