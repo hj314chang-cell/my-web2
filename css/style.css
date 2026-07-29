@@ -403,6 +403,23 @@ code {
   margin-top: 10px;
 }
 
+.takeaway p {
+  margin: 0 0 8px;
+}
+
+.takeaway ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.takeaway li {
+  margin-bottom: 6px;
+}
+
+.takeaway li:last-child {
+  margin-bottom: 0;
+}
+
 .result {
   margin-top: 16px;
   display: flex;
