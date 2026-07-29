@@ -1,6 +1,6 @@
 // 스크롤 시 현재 보고 있는 주제를 상단 네비게이션에 표시
 const sections = document.querySelectorAll(".topic[id]");
-const navLinks = document.querySelectorAll(".topic-nav a");
+const navLinks = document.querySelectorAll(".sidebar a");
 
 const observer = new IntersectionObserver(
   (entries) => {
