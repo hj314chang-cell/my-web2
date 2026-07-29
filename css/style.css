@@ -276,6 +276,10 @@ code {
   color: var(--accent-ink);
 }
 
+.takeaway + .takeaway {
+  margin-top: 10px;
+}
+
 .result { margin-top: 16px; }
 
 .result-link {
