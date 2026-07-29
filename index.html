@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>클로드코드 3일 학습 기록</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-inner">
+    <p class="eyebrow">AI 수업 정리 노트</p>
+    <h1>클로드코드 3일 학습 기록</h1>
+    <p class="hero-desc">3일 동안 클로드 코드(Claude Code)를 활용하는 AI 수업을 들으며 배운 내용을 주제별로 정리했어요.</p>
+    <nav class="topic-nav" aria-label="주제 바로가기">
+      <a href="#setup">환경 세팅</a>
+      <a href="#game">AI 게임 제작</a>
+      <a href="#webpage">웹페이지 배포</a>
+      <a href="#mcp">MCP &amp; 가계부</a>
+      <a href="#vercel">Vercel 배포</a>
+      <a href="#tools">사용 도구 모음</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="topic" id="setup">
+    <div class="topic-head">
+      <span class="badge badge-day1">Day 1</span>
+      <h2>개발 환경 세팅</h2>
+    </div>
+    <ul class="note-list">
+      <li>VS Code를 설치하고, 확장 프로그램으로 <strong>Claude Code</strong>를 설치했다.</li>
+      <li>터미널에서도 쓸 수 있도록 <strong>Claude Code CLI</strong>를 추가로 설치했다 (winget 명령어 한 줄로 설치 가능).</li>
+      <li>GitHub에 가입하고 <strong>Git</strong>을 설치했다.</li>
+      <li><strong>Node.js</strong>를 설치하고 터미널에서 사용할 수 있도록 설정했다.</li>
+    </ul>
+    <p class="takeaway">💡 확장 프로그램과 CLI를 둘 다 설치해두면, VS Code 안에서도 터미널에서도 자유롭게 클로드 코드를 쓸 수 있다.</p>
+    <p class="takeaway">📌 <strong>Git</strong>은 파일 변경 이력을 기록하는 <strong>버전 관리 프로그램</strong>(내 컴퓨터에서 동작). <strong>GitHub</strong>는 그 Git 기록을 온라인에 올려서 백업하고 다른 사람과 공유할 수 있게 해주는 <strong>웹 서비스</strong>. 즉 Git이 도구라면 GitHub는 그 도구로 만든 걸 올려두는 저장소 사이트다.</p>
+    <div class="result">
+      <a class="result-link is-pending" href="#" aria-disabled="true">🔗 결과물 보기 · 준비중</a>
+    </div>
+  </section>
+
+  <section class="topic" id="game">
+    <div class="topic-head">
+      <span class="badge badge-day1">Day 1</span>
+      <h2>AI로 게임 만들기</h2>
+    </div>
+    <ul class="note-list">
+      <li><strong>Google AI Studio</strong>를 이용해서 간단한 게임 <strong>「붕어빵 타이쿤」</strong>을 만들어봤다.</li>
+    </ul>
+    <p class="takeaway">💡 프롬프트만으로도 짧은 시간 안에 동작하는 프로토타입을 만들어볼 수 있었다.</p>
+    <div class="result">
+      <a class="result-link" href="https://bungeoppang-tycoon.ai.studio" target="_blank" rel="noopener">🔗 붕어빵 타이쿤 플레이하기</a>
+    </div>
+  </section>
+
+  <section class="topic" id="webpage">
+    <div class="topic-head">
+      <span class="badge badge-day1">Day 1-2</span>
+      <h2>웹페이지 제작 &amp; GitHub 배포</h2>
+    </div>
+    <ul class="note-list">
+      <li>코드를 짜기 전에 <strong>md(마크다운) 파일로 먼저 플래닝</strong>하는 법을 배웠다.</li>
+      <li>완성한 웹페이지를 <strong>GitHub에 배포</strong>하는 방법을 익혔다.</li>
+    </ul>
+    <p class="takeaway">💡 바로 코드를 짜기보다 마크다운으로 계획을 먼저 정리하니 작업 방향이 훨씬 명확해졌다.</p>
+    <div class="result">
+      <a class="result-link" href="https://hj314chang-cell.github.io/my-web/" target="_blank" rel="noopener">🔗 웹페이지 보러가기</a>
+    </div>
+  </section>
+
+  <section class="topic" id="mcp">
+    <div class="topic-head">
+      <span class="badge badge-day2">Day 2</span>
+      <h2>MCP 개념 &amp; 가계부 앱</h2>
+    </div>
+    <ul class="note-list">
+      <li>가계부 앱을 만들면서 <strong>MCP(Model Context Protocol)</strong> 개념을 배웠다.</li>
+      <li><strong>Supabase</strong>에 가입하고, 클로드 코드에서 Supabase를 연결했다.</li>
+      <li>가계부 데이터베이스를 연동해서 실제로 데이터를 저장하고 불러올 수 있게 만들었다.</li>
+    </ul>
+    <p class="takeaway">💡 MCP를 이용하면 클로드 코드가 외부 서비스(DB 등)를 직접 다룰 수 있게 된다는 걸 체감했다.</p>
+    <div class="result">
+      <a class="result-link" href="https://my-budget-one-kappa.vercel.app" target="_blank" rel="noopener">🔗 가계부 앱 열어보기</a>
+    </div>
+  </section>
+
+  <section class="topic" id="vercel">
+    <div class="topic-head">
+      <span class="badge badge-day3">Day 3</span>
+      <h2>Vercel 배포</h2>
+    </div>
+    <ul class="note-list">
+      <li>Vercel CLI를 설치하고 <code>vercel login</code>으로 로그인했다.</li>
+      <li><code>vercel</code> 명령어로 이 웹사이트를 실제로 배포해봤다.</li>
+    </ul>
+    <p class="takeaway">💡 <code>vercel --prod</code>를 붙여야 프로덕션에 반영되고, 그냥 <code>vercel</code>만 실행하면 미리보기 배포라는 걸 배웠다.</p>
+    <div class="result">
+      <a class="result-link" href="https://my-web2-sigma.vercel.app" target="_blank" rel="noopener">🔗 배포된 사이트 보기</a>
+    </div>
+  </section>
+
+  <section class="topic" id="tools">
+    <div class="topic-head">
+      <span class="badge badge-tools">참고</span>
+      <h2>사용한 도구 모음</h2>
+    </div>
+    <ul class="tool-list">
+      <li>
+        <span class="tool-name">Supabase</span>
+        <span class="tool-desc">클라우드 DB · GitHub 계정으로 연동</span>
+      </li>
+      <li>
+        <span class="tool-name">Vercel</span>
+        <span class="tool-desc">서버 배포 · Google 계정으로 연동</span>
+      </li>
+      <li>
+        <span class="tool-name">눈누</span>
+        <span class="tool-desc">무료 폰트 찾을 때 쓰는 사이트</span>
+        <a class="tool-link" href="https://noonnu.cc" target="_blank" rel="noopener">noonnu.cc</a>
+      </li>
+      <li>
+        <span class="tool-name">선생님 사이트</span>
+        <a class="tool-link" href="https://spoo.me/0727" target="_blank" rel="noopener">spoo.me/0727</a>
+        <span class="tool-desc tool-note">비밀번호는 별도로 보관 (페이지에는 미노출)</span>
+      </li>
+      <li>
+        <span class="tool-name">교육 자료 사이트 (0729 신규 공유)</span>
+        <a class="tool-link" href="https://spoo.me/0729" target="_blank" rel="noopener">spoo.me/0729</a>
+      </li>
+    </ul>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p>3-Day Claude Code AI 수업 정리 · 계속 업데이트됩니다</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
