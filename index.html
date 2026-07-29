@@ -40,6 +40,10 @@
       <svg viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2 22 20H2Z"/></svg>
       Vercel 배포
     </a>
+    <a href="#gogumamarket">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+      고구마마켓 (최종 프로젝트)
+    </a>
     <a href="#tools">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94Z"/></svg>
       사용 도구 모음
@@ -149,6 +153,26 @@
     <p class="takeaway">🔀 <strong>GitHub Pages vs Vercel, 언제 뭘 쓸까?</strong> GitHub Pages는 html/css/js로만 이뤄진 <strong>정적(static) 웹페이지</strong>만 올릴 수 있다 — 서버 없이 파일을 그대로 보여주는 방식이라, 오렌지아워·상하이여행 같은 순수 웹페이지는 GitHub Pages로 충분하다. 반면 가계부 앱은 <strong>Next.js</strong>라는 프레임워크로 만들어져서 "서버가 계속 켜진 채로 요청을 처리해주는" 구조(서버사이드 렌더링 등)가 필요하다 — <code>npm run dev</code>로 localhost:3000에서 돌아가던 게 바로 그 서버가 내 컴퓨터에서만 켜져 있던 상태였고, Vercel은 그 서버를 인터넷에 항상 켜둔 채로 대신 실행해주는 서비스다. 정리하면: <strong>그냥 html/css/js 웹페이지 → GitHub Pages</strong>, <strong>Next.js/React처럼 서버 로직이 필요한 앱 → Vercel</strong>.</p>
     <div class="result">
       <a class="result-link" href="https://my-web2-sigma.vercel.app" target="_blank" rel="noopener">🔗 배포된 사이트 보기</a>
+    </div>
+  </section>
+
+  <section class="topic topic-upcoming" id="gogumamarket">
+    <div class="topic-head">
+      <span class="badge badge-day3">Day 3</span>
+      <h2>고구마마켓 (최종 프로젝트) 🚧</h2>
+    </div>
+    <ul class="note-list">
+      <li>이번 교육에서 배운 내용을 전부 합쳐서 만드는 <strong>최종 산출물</strong>. <strong>CLAUDE.md, CRUD, 회원가입/로그인, 결제, 검증, 배포</strong>까지 다 들어간다.</li>
+      <li>아직 만드는 중이라 계속 업데이트할 예정.</li>
+    </ul>
+    <div class="takeaway">
+      <p>📌 <strong>CLAUDE.md는 <code>/init</code> 명령어로 만든다.</strong> 클로드 코드는 작업을 시작하기 전에 이 파일을 가장 먼저 참고하기 때문에, 여기에 프로젝트 규칙을 미리 적어두면 이후 작업이 훨씬 일관성 있게 진행된다. 적어둬야 할 것들:</p>
+      <ul>
+        <li>어떤 <strong>MCP</strong>를 활용하는지 (예: Supabase MCP)</li>
+        <li>어디에 <strong>배포</strong>하는지 (예: Vercel)</li>
+        <li><strong>디자인 가이드</strong> (색상, 폰트, 톤앤매너 등)</li>
+        <li>활용하는 <strong>기술 스택</strong> (예: Next.js, Supabase 등)</li>
+      </ul>
     </div>
   </section>
 
