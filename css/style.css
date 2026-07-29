@@ -88,6 +88,9 @@ body {
 }
 
 .sidebar a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   padding: 8px 10px;
   border-radius: 8px;
   border-left: 2px solid transparent;
@@ -96,6 +99,19 @@ body {
   font-size: 14px;
   font-weight: 500;
   transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+
+.sidebar a svg {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  color: var(--text-muted);
+  transition: color 0.15s ease;
+}
+
+.sidebar a:hover svg,
+.sidebar a.is-active svg {
+  color: var(--accent);
 }
 
 .sidebar a:hover,
