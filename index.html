@@ -44,6 +44,10 @@
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
       고구마마켓 (최종 프로젝트)
     </a>
+    <a href="#skills">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>
+      스킬 설치하기
+    </a>
     <a href="#tools">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94Z"/></svg>
       사용 도구 모음
@@ -180,6 +184,35 @@
     <div class="result">
       <a class="result-link" href="https://goguma-market-lake.vercel.app/" target="_blank" rel="noopener">🔗 고구마마켓 열어보기 (아직 만드는 중)</a>
     </div>
+  </section>
+
+  <section class="topic" id="skills">
+    <div class="topic-head">
+      <span class="badge badge-day3">Day 3</span>
+      <h2>스킬 설치하기</h2>
+    </div>
+    <ul class="note-list">
+      <li>클로드 코드에 <strong>스킬(플러그인)</strong>을 설치해서 기능을 확장하는 법을 배웠다.</li>
+      <li>예시로 한국 전용 스킬 모음인 <strong>K-skill</strong>을 설치해봤다.</li>
+      <li>업무 자동화 도구인 <strong>n8n</strong> 관련 스킬도 설치할 수 있다는 걸 알게 됐다.</li>
+    </ul>
+    <div class="takeaway">
+      <p>🧩 <strong>K-skill 활용법</strong> — SRT/KTX 조회, 카카오톡, 날씨/미세먼지, 주식, 쿠팡, 다이소, 택배 송장 조회 같은 한국 전용 기능들을 클로드 코드에서 바로 쓸 수 있게 해주는 스킬 모음.</p>
+      <ul>
+        <li>설치: <code>/plugin marketplace add NomaDamas/k-skill</code> → <code>/plugin install k-skill@k-skill</code></li>
+        <li>사용: <code>/k-skill:스킬이름</code> 형식으로 호출 (예: 로또 결과 조회는 <code>/k-skill:lotto-results</code>)</li>
+      </ul>
+    </div>
+    <div class="takeaway">
+      <p>🔗 <strong>n8n skills 활용법</strong> — <strong>n8n</strong>은 여러 서비스(슬랙, 구글시트, 웹훅 등)를 서로 연결해서 "이벤트가 생기면 자동으로 이렇게 처리해라" 같은 업무 자동화 워크플로우를 만드는 도구(Zapier와 비슷한 개념). <code>n8n-skills</code>는 클로드 코드가 이 워크플로우를 실수 없이 잘 만들도록 도와주는 14개 스킬 묶음이다 (표현식 문법, 반복/페이지네이션, AI 에이전트 노드, 에러 처리, 인증 정보 관리 등).</p>
+      <ul>
+        <li>설치(권장): <code>/plugin install czlonkowski/n8n-skills</code></li>
+        <li>또는: <code>/plugin marketplace add czlonkowski/n8n-skills</code> → <code>/plugin install</code> → 목록에서 "n8n-mcp-skills" 선택</li>
+        <li>사용: 따로 명령어를 안 써도, "웹훅 워크플로우 만들어줘" 같이 그냥 말하면 관련 스킬이 알아서 켜진다.</li>
+        <li>참고: Skills 기능은 Claude Pro 이상 요금제가 필요하고, <code>n8n-mcp</code>와 같이 쓰면 제일 잘 작동한다.</li>
+      </ul>
+    </div>
+    <p class="takeaway">💡 <strong>제일 쉬운 설치법</strong>: GitHub 저장소 URL을 복사해서 클로드 코드에게 "이거 설치해줘"라고 말만 해도 된다. 클로드 코드가 알아서 위의 marketplace 등록 + 설치 명령까지 실행해준다.</p>
   </section>
 
   <section class="topic" id="tools">
